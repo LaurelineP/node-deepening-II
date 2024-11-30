@@ -1,0 +1,29 @@
+{
+  "name": "node-deepening-II",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.12.1"
+  },
+  "scripts": {
+    "start:node-farm": "node --watch 01_basic-builtins/03_project_node-farm",
+    "test:node-farm": "pnpm start:node-farm & pnpm exec playwright test 01_basic-builtins/03_project_node-farm/tests/01-node-farm.spec.js",
+    "event-loop-and-thread-pools": "node --watch ./02_how_nodes_works/01_event-loop-and-thread-pools.js",
+    "events": "node --watch ./02_how_nodes_works/02_events.js",
+    "streams": "node --watch ./02_how_nodes_works/03_streams.js",
+    "modules": "node ./03_modules",
+    "async-callback-to-promise": "node --watch 04_async_promise-and-async-await/01_callbacks-to-promises.js ",
+    "async-callback-to-promise-review": "node --watch 04_async_promise-and-async-await/01_callbacks-to-promises.review.js",
+    "async-callback-to-promise-refacto": "node --watch 04_async_promise-and-async-await/01_callbacks-to-promises.refacto.js",
+    "async-await": "node --watch 04_async_promise-and-async-await/02_to-async-await.js",
+    "async-concurrent-promises": "node --watch 04_async_promise-and-async-await/03_concurrent-promises"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.9.3"
+  }
+}
