@@ -5,7 +5,7 @@
 const { readFile } = require('node:fs/promises')
 const superagent = require('superagent')
 const { useAPI, INPUT_FILE } = require('./tools')
-const { logValue, watchError } = require('../core/logs.utils')
+const { watchError } = require('../core/logs.utils')
  
 async function runConcurrentPromises(n = 5){
 	try {
